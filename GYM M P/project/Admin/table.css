@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+Body{
+    text-align: center;
+    margin-right: 20px;
+    color: black;
+    width: 85%;
+    height: 10px;
+    float: right;
+}
+.table{
+    display: inline-table;
+    border-color: 2px solid purple;
+    color: black;
+    width: 95%;
+    height: 10px;
+    float: right;
+    margin-right:20px;
+    border-radius: 4px;
+}
+
+h1{
+    margin-top: 150px;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 25px;
+}
+
+table th{
+    text-align: center;
+    font-size: 15px;
+    background-color: lightsalmon;
+}
+
+table tr td{
+    text-align: center;
+}
+
+table tr td:hover{
+    text-align: center;
+    outline: 2px solid purple;
+    font-weight: bold;
+}
+
+.edit{
+    width: 60px;
+    text-align: center;
+    height: 25px;
+    color: black;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-color: lightsalmon;
+    cursor: pointer;
+}
+
+.edit a{
+    text-decoration: none;
+    color: black;
+}
+.btn{
+    width: 60px;
+    text-align: center;
+    height: 25px;
+    color: black;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-top: 5px;
+    margin-left: 145px;
+    margin-bottom: 2px;
+    background-color: lightsalmon;
+    cursor: pointer;
+}
+
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn1{
+    width: 60px;
+    text-align: center;
+    height: 25px;
+    color: black;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-top: 5px;
+    margin-left: 145px;
+    margin-bottom: 2px;
+    background-color: lightsalmon;
+    cursor: pointer;
+}

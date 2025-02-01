@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Pages.css">
+    <title> Registration </title>
+</head>
+
+<body>
+    <div class="register">
+        <div class="container_form" id="register">
+            <form action="#" method="POST" autocomplete="off">
+                <h1> Registration Form </h1>
+                <div class="input_field">
+                    <i class='bx bxs-user'></i><input type="text" placeholder="Full Name" name="name" required>
+                    <i class='bx bxs-user'></i><select class="input_field" name="Gender">
+                        <option value="Not Selected"> Select Your Gender </option>
+                        <option value="Male"> Male </option>
+                        <option value="Female"> Female </option>
+                        <option value="Other"> Other </option>
+                    </select><br>
+                    <i class='bx bxs-user'></i><input type="text" placeholder="Username" name="Username" required><br>
+                    <i class='bx bxs-phone'></i><input type="number" placeholder="Phone Number" name="Phone"
+                        required><br>
+                    <i class='bx bx-envelope'></i><input type="email" placeholder="Email" name="Email" required><br>
+                    <i class='bx bxs-lock-alt'></i><input type="password" placeholder="password" name="Password"
+                        required><br>
+                    <i class='bx bxs-lock-alt'></i><input type="password" placeholder="Confirm password"
+                        name="CPassword" required>
+                </div>
+                <div class="">
+                    <button type="cancel" class="btn"> Cancel </button>
+                    <input type="submit" class="btn" name="Done"> </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- <?php
+include("connection.php");
+error_reporting(0);
+
+if ($_POST['Done']) {
+
+    $name     = $_POST['name'];
+    $Gender   = $_POST['Gender'];
+    $username = $_POST['Username'];
+    $Phone    = $_POST['Phone'];
+    $Email    = $_POST['Email'];
+    $Pass     = $_POST['Password'];
+    $CPass    = $_POST['CPassword'];
+
+    if ($Pass == $CPass) {
+        $sql = " INSERT INTO `register`(`Name`, `Gender`, `Username`, `Phone`, `Email`, `Password`, `Confirm Password`) VALUES ('$name','$Gender','$username','$Phone','$Email','$Pass','$CPass')";
+
+        $data  = mysqli_query($con, $sql);
+
+        if ($data) {
+            echo "<script> alert('Register Sucessfully..!') </script>";
+            header("refresh:0; url=http://localhost/project/Admin/Admin.html");
+
+
+        } else {
+            echo "Data Not inserted..ERROR";
+        }
+    } else {
+        echo "<script> alert('Enter Valid Confirm Password..!') </script>";
+    }
+    header("refresh:0; url=http://localhost/project/Admin/registratipn.php");
+}
+?> -->
